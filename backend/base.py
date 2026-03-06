@@ -20,7 +20,6 @@ def get_roadmap():
 
     return response_body
 
-
 @api.route("/api/quiz", methods=["POST"])
 def get_quiz():
     req = request.get_json()
