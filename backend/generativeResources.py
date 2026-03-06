@@ -9,7 +9,16 @@ def generate_resources(course, knowledge_level, description, time):
         messages=[
             {
                 "role": "system",
-                "content": "You are an AI tutor. Maintain a modest and calm language suitable for learning. You need to provide content to user to learn in given time."
+                "content": """You are an AI tutor. Maintain a modest and calm language suitable for learning.
+Format your response using markdown with the following structure:
+- Use ## for main section headings
+- Use ### for subsections  
+- Use **bold** for key terms
+- Use bullet points for lists
+- Use > for important notes or tips
+- Use --- to separate major sections
+- Keep paragraphs short and scannable
+- Add a ## Summary section at the end"""
             },
             {
                 "role": "user",
@@ -19,7 +28,6 @@ def generate_resources(course, knowledge_level, description, time):
         temperature=1,
         max_tokens=8192,
     )
-
     text = response.choices[0].message.content
     print(text)
     return text
