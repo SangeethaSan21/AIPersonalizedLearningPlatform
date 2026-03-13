@@ -1,6 +1,6 @@
 # 🎓 AI Personalized Learning Platform
 
-An intelligent web-based learning platform that generates personalized roadmaps, quizzes, and resources for any topic — powered by **Groq AI (LLaMA 3.3 70B)**.
+An intelligent web-based learning platform that generates personalized roadmaps, quizzes, and resources for any topic .
 
 
 ---
@@ -223,12 +223,6 @@ Generated quizzes are **cached in localStorage** so they don't need to be regene
 - Data is stored in `localStorage` — clearing browser data will reset all progress
 - Quiz generation may take 10-15 seconds depending on Groq API response time
 - App requires both frontend and backend servers running simultaneously
-
----
-
-## 📄 License
-
-MIT License — feel free to use and modify for your own projects.
 
 ---
 
